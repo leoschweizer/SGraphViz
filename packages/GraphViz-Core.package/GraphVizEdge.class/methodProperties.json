@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"arrowhead" : "jrp 4/3/2005 22:31",
+		"arrowtail" : "jrp 4/3/2005 22:31",
+		"dir" : "jrp 4/3/2005 22:15",
+		"fromNode" : "jrp 3/20/2005 21:56",
+		"fromNode:" : "SR 06/15/2010 14:19",
+		"isEdge" : "jrp 3/6/2005 21:17",
+		"nodeType" : "jrp 3/8/2005 07:01",
+		"toNode" : "jrp 3/20/2005 21:56",
+		"toNode:" : "SR 06/15/2010 14:19",
+		"vertices" : "SR 06/15/2010 14:23",
+		"writeContentsOn:withIndent:for:" : "jrp 3/20/2005 21:58" } }

@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"commandLineForFormat:" : "SR 06/15/2010 14:19",
+		"createMorph" : "bvs 5/2/2005 21:11",
+		"make:" : "ab 04/14/2010 14:39",
+		"outputCommandLineFileNameFor:" : "bvs 5/2/2005 21:59",
+		"outputPathForCommandLine" : "ab 04/14/2010 14:33",
+		"runOSProcess:with:" : "SR 06/15/2010 14:23",
+		"runWithSystemFramework:" : "ab 04/14/2010 14:17" } }

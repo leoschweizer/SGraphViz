@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"newFor:" : "SR 06/15/2010 14:19" },
+	"instance" : {
+		"baseFileName" : "jrp 3/13/2005 22:22",
+		"createMorph" : "jrp 3/13/2005 22:40",
+		"createXMLDocument" : "jrp 3/13/2005 22:41",
+		"dotExtension" : "jrp 3/5/2005 16:14",
+		"dotFileName" : "jrp 3/3/2005 22:16",
+		"evaluateUsing:forType:" : "jrp 3/27/2005 18:58",
+		"generateType:" : "dtl 3/18/2005 22:34",
+		"graph" : "jrp 3/3/2005 22:11",
+		"graph:" : "SR 06/15/2010 14:19",
+		"htmlSvgStringFor:" : "jrp 3/13/2005 23:54",
+		"make:" : "jrp 3/13/2005 22:39",
+		"outputFileDirectory" : "SR 06/15/2010 14:19",
+		"outputFileNameFor:" : "jrp 3/27/2005 18:01",
+		"outputPath" : "jrp 3/27/2005 17:44",
+		"outputPath:" : "SR 06/15/2010 14:19",
+		"preferredProgram" : "jrp 5/2/2005 23:34",
+		"preferredProgram:" : "SR 06/15/2010 14:19",
+		"writeDotFile" : "jrp 3/3/2005 22:12",
+		"writeDotFileNamed:" : "SR 06/15/2010 14:23",
+		"writeHtmlSvgFor:" : "SR 06/15/2010 14:23" } }

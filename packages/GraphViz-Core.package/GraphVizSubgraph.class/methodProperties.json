@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addNewNode:with:" : "SR 06/15/2010 14:19",
+		"isSubgraph" : "jrp 3/8/2005 06:44",
+		"nodeType" : "jrp 3/8/2005 07:01",
+		"parent" : "jrp 3/20/2005 16:49",
+		"parent:" : "SR 06/15/2010 14:19",
+		"rootGraph" : "jrp 3/20/2005 16:55",
+		"writeHeaderOn:withIndent:" : "jrp 3/13/2005 14:28" } }
