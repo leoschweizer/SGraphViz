@@ -1,12 +1,15 @@
 external
 runOSProcess: command with: arguments
 
-	| shell |
+	| shell processHandle |
 	shell := Win32Shell new.
-	shell
+	processHandle := shell
 		shellExecute: nil
 		lpOperation: 'open'
 		lpFile: command
 		lpParameters: arguments
 		lpDirectory: self outputPath
-		nShowCmd: 0
+		nShowCmd: 0.
+	Win32Utils 
+		waitForSingleObject: processHandle 
+		with: self durationToWaitForGenerating asMilliSeconds.

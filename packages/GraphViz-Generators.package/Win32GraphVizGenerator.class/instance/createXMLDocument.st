@@ -3,12 +3,8 @@ createXMLDocument
 
 	| file parser xml |
 	file := self make: #dot.
+	file := self launchDot2Gxl: file.
 	
-	file := self 
-		do: [self launchDot2Gxl: file]
-		blockUntilFileUpdated: (self outputFileNameFor: #xml)
-		waitingNoMoreThan: self durationToWaitForGenerating.
-
 	parser := Smalltalk at: #XMLDOMParser ifAbsent: [nil].
 	xml := FileStream readOnlyFileNamed: file.
 	^ [parser
