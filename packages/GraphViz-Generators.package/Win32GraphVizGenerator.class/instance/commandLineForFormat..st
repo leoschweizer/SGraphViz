@@ -9,7 +9,8 @@ commandLineForFormat: outputFormat
 		stream
 			nextPut: $";
 			nextPutAll: self dotFileName;
-			nextPutAll: '" -T';
+			nextPutAll: '" -y';
+			nextPutAll: ' -T';
 			nextPutAll: outputFormat;
 			nextPutAll: ' -o "';
 			nextPutAll: file;
