@@ -1,4 +1,4 @@
 accessing
 pointsPerInch
 
-	^ 72
+	^ 100.0
