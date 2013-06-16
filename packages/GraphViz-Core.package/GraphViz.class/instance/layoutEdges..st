@@ -1,13 +1,20 @@
 layout
 layoutEdges: edgeList
 	
+	| newEdges |
 	"format => edge tail head n x1 y1 .. xn yn [label xl yl] style color"
 	
-	edgeList do:
-		[:each | | edge positionOfStyle |
-		edge := self edgeNamed: each second -> each third.
+	newEdges := OrderedCollection new.
+	
+	edgeList withIndexDo:
+		[:each :index | | newEdge positionOfStyle |
+		newEdge := GraphVizEdge new 
+			id: (each second asNumber -> each third asNumber);
+			fromNode: (self nodeNamed: each second);
+			toNode: (self nodeNamed: each third);
+			inheritedStyle: currentEdgeStyle.
 		
-		edge ifNotNil:
+		newEdge ifNotNil:
 			[ | numberOfVertices pos |
 			numberOfVertices := each fourth asNumber.
 			positionOfStyle := 5 + (numberOfVertices * 2).
@@ -20,6 +27,11 @@ layoutEdges: edgeList
 						nextPut: $,;
 						nextPutAll: ((each at: i + 1) asNumber * self class pointsPerInch) rounded asString;
 						nextPutAll: ' ']].
-				edge pos: pos allButLast.
-				edge style: (each at: positionOfStyle).
-				edge color: (each at: positionOfStyle + 1)]]
+				newEdge pos: pos allButLast.
+				newEdge style: (each at: positionOfStyle).
+				newEdge color: (each at: positionOfStyle + 1)].
+			newEdges add: newEdge].
+	
+	children removeAllSuchThat: [:each | each isEdge].
+	children addAll: newEdges.
+	edges := newEdges.

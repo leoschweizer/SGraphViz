@@ -2,7 +2,9 @@ accessing
 edgeNamed: anAssociation
 
 	| edge |
-	edge := edges at: anAssociation ifAbsent: [nil].
+	edge := edges 
+		detect: [:each | each key = anAssociation] 
+		ifNone: [nil].
 	
 	edge ifNil:
 		[self subgraphs do:
@@ -10,4 +12,4 @@ edgeNamed: anAssociation
 			edge := each edgeNamed: anAssociation.
 			edge ifNotNil: [^ edge]]].
 	
-	^ edge
+	^ edge value

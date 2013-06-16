@@ -11,7 +11,7 @@ addNewEdge: anAssociation with: associations
 	edge fromNode: (self addNewNode: anAssociation key).
 	edge toNode: (self addNewNode: anAssociation value).
 	
-	edges at: anAssociation key asString -> anAssociation value asString put: edge.
+	edges add: (anAssociation -> edge).
 	edge inheritedStyle: currentEdgeStyle.
 	
 	^ self addNewChild: edge
