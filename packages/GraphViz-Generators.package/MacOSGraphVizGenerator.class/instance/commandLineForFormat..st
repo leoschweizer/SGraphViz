@@ -9,7 +9,7 @@ commandLineForFormat: outputFormat
 		stream
 			nextPutAll: self outputPathForCommandLine;
 			nextPutAll: self dotFileName;
-			nextPutAll: ' -T';
+			nextPutAll: ' -s100 -y -T';
 			nextPutAll: outputFormat;
 			nextPutAll: ' -o ';
 			nextPutAll: file]
